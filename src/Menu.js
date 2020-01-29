@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 
-const topPage = () => <div><h1>Top Page</h1>ここがトップページです</div>
+const topPage = () => <div><h1>Top Page</h1>ここがトップです</div>
 const page1 = () => <div><h1>page1</h1>1枚目のページです</div>
 const page2 = () => <div><h1>page2</h1>2枚目のページです</div>
 const page3 = () => <div><h1>page3</h1>3枚目のページです</div>
@@ -20,6 +20,8 @@ export default class Menu extends React.Component {
 
         return (
             <Router>
+                <h2 style={{color:'red'}}>TestPage</h2>
+                <h3 style={{fontSize: '12rem'}}>this is test page</h3>
                 <div style={{width: '500px', textAlign: 'left'}}>
                     <ul style={{display: 'flex'}}>
                         <li style={liStyle}><Link to='/'>top</Link></li>
